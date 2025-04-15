@@ -1,0 +1,101 @@
+
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 56px;
+    color: var(--dark-color);
+}
+
+.hero-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 120px 0;
+    margin-top: -56px;
+}
+
+
+.stat-box {
+    transition: transform 0.3s;
+}
+.stat-box:hover {
+    transform: translateY(-5px);
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.card {
+    transition: all 0.3s;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.progress {
+    height: 25px;
+    border-radius: 12px;
+}
+.progress-bar {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.step-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.testimonial-img {
+    border: 3px solid var(--primary-color);
+}
+
+
+.social-icons a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.1);
+    text-align: center;
+    line-height: 36px;
+    transition: all 0.3s;
+}
+.social-icons a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .hero-banner {
+        padding: 80px 0;
+        background-attachment: scroll;
+    }
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
